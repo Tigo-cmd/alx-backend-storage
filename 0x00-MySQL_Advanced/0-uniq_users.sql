@@ -1,4 +1,4 @@
----  a SQL script that creates a table with unique users
+-- a SQL script that creates a table with unique users
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
