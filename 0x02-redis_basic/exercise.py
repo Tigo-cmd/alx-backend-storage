@@ -3,12 +3,14 @@
 
 import redis
 import uuid
+from functools import wraps
 from typing import Union
 
 
 class Cache:
     """ implements caching using redis"""
     def __init__(self) -> None:
+        """init cache instance"""
         self.__redis: redis = redis.Redis()
         self.__redis.flushdb(True)
 
